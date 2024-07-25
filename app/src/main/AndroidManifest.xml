@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <!-- version before marshmellow bta3mel heek     <uses-permission android:name="" w been braces btetlob l permission le badak yeha ne7na badna l write     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission> w 3atoul write byeshmol l read ya3ne iza 2oltelo write extenal storage ya3ne ka2nak 3am t2olo kamen read extrnal storage 2ama l read la7ala heye bas lal kera2a ma bteshmel write -->
+    <!-- <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission> -->
+    <!-- hala2 law sha8lt l app 3ala version 2a2l mn marshmellow byeshte8l 3ade aktar ma bymshe l 7al bya3mel error l2no iza 2a3la lezm tet5ed l persmission btare2a tenye 8eer l manifist -->
+    <!-- aktr mn marshmellow version 6 sar yotlob l permission t3arefa bel code 3ashen 3end sta5dema yetlob mn l user eno ya3mel ok lal permission mesh 2awl ma efta7 l app le2e l permission ma3mole w ana lisa ma bade yeha hala2 -->
+    <!-- l permission bel manifist ytem este5dema 3end tanzel l application -->
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.DataPersistance2"
+        tools:targetApi="31">
+        <activity
+            android:name=".DIFFER_BETWEEN_INTERNAL_STORAGE_EXTERNAL_STORAGE"
+            android:exported="false" />
+        <activity
+            android:name=".EXTERNAL_STORAGE_PRIVATE"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".EXTERNAL_STORAGE_PUBLIC"
+            android:exported="true"></activity>
+        <activity
+            android:name=".WHERE_WE_USE_EACH_DATA_PRESITANCE"
+            android:exported="false" />
+        <activity
+            android:name=".INTERNAL_STORAGE_TEMPORARY"
+            android:exported="true" />
+        <activity
+            android:name=".INTERNAL_STORAGE_NUMBER_TWO"
+            android:exported="false" />
+        <activity
+            android:name=".INTERNAL_STORAGE"
+            android:exported="true"></activity>
+        <activity
+            android:name=".INTRO_STORAGE"
+            android:exported="true" />
+    </application>
+
+</manifest>
